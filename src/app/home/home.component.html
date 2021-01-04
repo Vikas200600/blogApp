@@ -1,0 +1,13 @@
+<div *ngFor="let student of allStudents" class="card container">
+    <div class="row">
+        <div class="col-9">
+            <div class="card-body">
+                <p><b>StudentId:</b> {{student.id}}&nbsp;<b>StudentName:</b>{{student.name}} &nbsp;<b>StudentEmail:</b>{{student.email}}</p>
+            </div>
+        </div>
+        <div class="col-3 align-self-center">
+            <a [routerLink]="['/view',student.id]" class="btn btn-primary">View</a>
+        </div>
+
+    </div>
+</div>
